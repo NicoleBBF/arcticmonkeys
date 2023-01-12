@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/style.css"/>
+    <!-- conexion a nuestro css -->
+    <title>Arctic Monkeys</title>
+</head>
+
+<!-- NUESTRO CUERPO DONDE VAMOS A TRABAJAR -->
+<body>
+
+    <header class="header" id="header">   <!-- HEADER MENU DE NAVEGACION -->
+        <nav> <!-- ETIQUETA DE NAVEGACION -->
+            <ul class="lista">
+                <p class="titulo">Arctic<span class=second-color>Monkeys</span>
+                </p>
+                <li>
+                    <a href="./index.html">Inicio</a> <!-- <A> ETIQUETA DE LINK / ESTE ES UN LINK RELATIVO ES DECIR INTERNO A NUESTRA WEB -->
+                </li>
+                <li>
+                    <a href="./pages/historia.html">Historia</a>
+                </li>
+                <li>
+                    <a href="./pages/integrantes.html">Integrantes</a>
+                </li>
+                <li>
+                    <a href="./pages/discografia.html">Discografía</a>
+                </li>
+                <li>
+                    <a href="./pages/conciertos.html">Conciertos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="flex-container">
+        <img src="./assets/arcticmonkeysmain.jpg" alt=""> <!-- IMAGEN DE CABECERA -->
+        <p class="sobre">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas et laudantium quibusdam. Molestias quaerat voluptates modi beatae est consequatur veritatis saepe. Saepe ea doloribus magnam necessitatibus excepturi quasi ducimus nisi! Maiores eius consequatur obcaecati. Rem nemo inventore laborum delectus quia laudantium, soluta nulla? At quos harum soluta animi nisi veniam eos inventore voluptatum quisquam possimus quam explicabo reiciendis placeat ipsum recusandae et, distinctio libero exercitationem necessitatibus officiis, rem nihil quia. Hic sed neque architecto quasi, est laudantium unde ex similique, error officia, doloribus velit odit quo asperiores debitis. Non molestias architecto quod error adipisci ipsa quasi mollitia odio excepturi culpa.<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea tenetur aliquid voluptate vero animi fugiat optio ipsam qui laudantium debitis! Excepturi nam rerum eos tenetur vitae id fugiat reiciendis commodi labore nostrum quas, consequuntur nesciunt placeat cum iste optio soluta, doloremque distinctio atque quaerat. Dolore voluptas soluta cum itaque labore nobis blanditiis maiores excepturi earum, nesciunt dolores possimus ad nostrum deleniti nisi assumenda atque suscipit illo fuga facere! Natus accusantium dolores illo, illum aliquid maiores eveniet exercitationem quaerat ab dolore?
+        </p>
+    </div>
+    
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main" id="main"> <!-- main = etiqueta que encierra contenido prinicipal -->
+
+<!-- titulos populares-->
+    <h1>TITULOS POPULARES</h1>
+<section class="grilla">
+    <div class="grillahijo g1">
+        <img class="albumindex" src="./assets/albumam.jpg" alt="The Car">
+        <p>hijo</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsum dicta veritatis exercitationem enim quasi ad ducimus, earum perferendis, eveniet alias saepe sed nam voluptatibus, possimus iste quia? Iure, expedita!</p>
+    </div>
+
+    <div class="grillahijo g2">
+        <img class="albumindex" src="./assets/albumfavouriteworstnightmare.jpg" alt="Tranquility Base Hotel + Casino">
+        <p>hijo</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsum dicta veritatis exercitationem enim quasi ad ducimus, earum perferendis, eveniet alias saepe sed nam voluptatibus, possimus iste quia? Iure, expedita!</p>
+    </div>
+    
+    <div class="grillahijo g3">
+            <img class="albumindex" src="./assets/albumwpstwin.jpg" alt="Whatever People Say I Am, That's What I'm Not">
+            <p>hijo</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsum dicta veritatis exercitationem enim quasi ad ducimus, earum perferendis, eveniet alias saepe sed nam voluptatibus, possimus iste quia? Iure, expedita!</p>
+        </div>
+
+    </main>
+
+    <section class="formulario"> <!-- titulo seccion novedades -->
+        <form action="" class="form">             <!-- ABRIMOS NUESTRO FORM -->
+            <h1>Recibe las últimas novedades</h1>
+            <fieldset>
+                <legend>
+                    Suscribirse al Newlestter
+                </legend>
+                <div class="form__content"> <!-- INPUT NOMBRE DIV ETIQUETA CONTENEDORA-->
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="ingrese su nombre porfavor">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Ingrese su apellido">
+                </div>
+                <div class="form__content"> <!-- INPUT EMAIL -->
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Ingrese su correo" required>
+                </div>
+                <div class="form__btn">
+                    <button type="submit" class="btn">Suscribirse</button> <!-- INPUT TYPE ENVIAR -->
+                </div>
+            </fieldset>
+        </form>
+    </section> <!-- fin seccion novedades -->
+
+
+    
+</body>
+
+</html>
