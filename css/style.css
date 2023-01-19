@@ -91,20 +91,26 @@ img.albumindex {
     height: 400px
 }
 
+
 /* NAV */
 
-nav {
-    background-color: #1B120F;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    width: 100%;
-    padding: 10px;
+.logo {
+    height: 100px;
+    margin: 0px 50px;
 }
 
-nav a {
-    color: #E6DEDD;
+
+
+div.container-fluid {
+    background-color: #1B120F;
+}
+
+.nav-link {
+    color:#E6DEDD
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #c92a1f;
 }
 
 nav ul {
@@ -272,16 +278,30 @@ nav ul {
 }
 
 
-
-
-
 /* FOOTER */
 
 footer {
     background: #1B120F;
     color: #E6DEDD;
-    font-size: 30px;
+    size: 30px;
     display: flex;
     justify-content: space-between;
-    padding: 30px 20px;
+    padding: 50px 30px;
 }
+
+/* COLOR ICONOS FOOTER */
+
+i {
+    color: #F89D13;
+}
+
+@media only screen and (min-width:900px) and (max-width:899px)
+
+
+
+
+@media only screen and (min-width:600px) and (max-width:1200px)
+
+.cajas {
+    flex-direction: column;
+    }
