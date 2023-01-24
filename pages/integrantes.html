@@ -1,75 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Integrantes</title>
-    
-        <link rel="stylesheet" href="../css/style.css">
-    
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link al cdn de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Integrantes</title>
+
+</head>
 
 <body>
-    <header class="header" id="header">   <!-- HEADER MENU DE NAVEGACION -->
-        <nav> <!-- ETIQUETA DE NAVEGACION -->
-            <ul class="lista">
-                <p class="titulo">Arctic<span class=second-color>Monkeys</span>
-                </p>
-                <li>
-                    <a href="../index.html">Inicio</a> <!-- <A> ETIQUETA DE LINK / ESTE ES UN LINK RELATIVO ES DECIR INTERNO A NUESTRA WEB -->
-                </li>
-                <li>
-                    <a href="../pages/historia.html">Historia</a> 
-                </li>
-                <li>
-                    <a href="./integrantes.html">Integrantes</a>
-                </li>
-                <li>
-                    <a href="../pages/discografia.html">Discografía</a>
-                </li>
-                <li>
-                    <a href="../pages/conciertos.html">Conciertos</a>
-                </li>
-            </ul>
+    <header class="header" id="header"> <!-- HEADER MENU DE NAVEGACION -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+
+                <a class="navbar-brand href=""></a>
+                <!--icono-->
+                <img class=" logo" src="../assets/logo.svg" alt="logo">
+
+                    <!--boton del menu-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--elementos del menu colapsable-->
+
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./integrantes.html">Integrantes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./historia.html">Historia</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./discografia.html">Discografía</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./conciertos.html">Conciertos</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+            </div>
+
         </nav>
     </header>
 
-<!-- EL CUERPO DONDE SE TRABAJA -->
-<body class="integrantes">
-    <h1>INTEGRANTES</h1>
+    <!-- EL CUERPO DONDE SE TRABAJA -->
+
+    <body class="integrantes">
+        <h1>INTEGRANTES</h1>
         <h2>Alex Turner</h2>
         <img src="../assets/alexturner.jpg" alt="Alex Turner">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, iure? Libero eligendi esse, explicabo error a veritatis cumque ullam ea? Beatae optio facilis quia laudantium corrupti incidunt totam sit suscipit ratione dolores repellat obcaecati dolorum vitae quas impedit ab quae, laboriosam ex. Ut dolor culpa sequi rerum sit nam assumenda alias. Ipsa modi culpa molestias ipsum sed facilis in illum numquam laboriosam architecto similique aliquid, sequi libero alias id ut aspernatur quos a est voluptate eveniet. Numquam ullam odit dolore nostrum dignissimos eius officiis exercitationem placeat. Perspiciatis tempora deleniti, voluptate officiis explicabo ea similique eius voluptas veritatis reprehenderit doloremque dicta!</p>
+        <p>Alexander David Turner (Sheffield, Inglaterra; 6 de enero de 1986) es un músico, cantante, compositor y
+            productor discográfico británico, conocido por ser el vocalista y principal compositor de la banda de rock
+            Arctic Monkeys; también ha publicado con su proyecto paralelo The Last Shadow Puppets y en solitario.
+
+            Cuando tenía 16, Turner formó Arctic Monkeys junto a otros tres amigos en su natal Sheffield. Su álbum
+            debut, Whatever People Say I Am, That's What I'm Not (2006), se convirtió en el álbum debut de venta más
+            rápida en toda la historia del Reino Unido, siendo posicionado en el número 30 de la lista de «los mejores
+            álbumes debut de todos los tiempos» de la revista Rolling Stone.</p>
         <br>
 
         <h2>Matt Helders</h2>
         <img src="../assets/matthelders.jpeg" alt="Matt Helders">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, quibusdam. Aliquam qui magni laborum quisquam velit in quo aut placeat optio! Illum distinctio, cupiditate error fugit maiores perferendis voluptas esse voluptate beatae pariatur ducimus, voluptatibus quibusdam assumenda debitis ea officia numquam sed ut ab placeat in at quam necessitatibus iure? Adipisci et totam earum dolor impedit in asperiores voluptas numquam velit minus? Recusandae similique, architecto eligendi nisi amet iste aliquam quod placeat explicabo magnam! Deserunt, ex aperiam tempore voluptates perspiciatis quos incidunt, dignissimos vero quod illum minus at doloribus. Ab doloribus voluptate veniam ratione voluptas cumque ut quam suscipit itaque.</p>
+        <p>Matthew Helders (Sheffield, 7 de mayo de 1986) es el baterista de la banda británica Arctic Monkeys. Es el
+            corista más destacable, apareciendo en pistas como “You Probably Couldn't See For The Lights But You Were
+            Staring Straight At Me”, "I Bet You Look Good on the Dancefloor”, "Teddy Picker" y "D Is For Dangerous".
+            También se puede notar su trabajo como vocalista en "Brick by Brick", canción de Suck It and See. Es visto
+            como el “tranquilo y amable diplomático” de la banda.</p>
         <br>
 
         <h2>Jamie Cook</h2>
         <img src="../assets/jamiecook.jpg" alt="Jamie Cook">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi nostrum numquam rerum totam ducimus ex velit modi. Veritatis soluta voluptatum expedita! Pariatur expedita dolores perferendis! In asperiores consectetur provident deleniti facilis? Aperiam voluptas earum non id maiores cupiditate laudantium dolorem, deserunt possimus laborum dicta eos quo placeat ad doloremque ab, quasi blanditiis! Ab rem debitis ratione odio neque pariatur, repudiandae enim eveniet, dolores quasi eos consequatur qui, nihil quaerat voluptatum non exercitationem expedita quibusdam? Facere fuga ducimus debitis ab obcaecati, quibusdam velit culpa. Magni ipsum neque dolorum deserunt libero perferendis numquam voluptas atque, blanditiis ab voluptatem repellat quae corporis illo.</p>
+        <p>Jamie Robert Cook (nacido el 8 de julio de 1985) es el guitarrista principal de Arctic Monkeys.
+            Jamie Cook y Alex Turner son vecinos en High Green. Al igual que Alex Turner, Cook pidió un instrumento
+            musical como regalo de Navidad en 2001, recibiendo su primera guitarra eléctrica. Cook ha sido el miembro
+            más franco de la banda, diciendo: (que él) “odia jodidamente a la prensa” y defendiendo a la banda numerosas
+            veces diciendo: “No podría vernos siendo como Coldplay, sería muy aburrido. Haces giras por tres años y
+            tocas el mismo concierto noche tras noche. Debe ser muy depresivo. A alguna gente le debe encantar hacer
+            eso, pero nosotros no podríamos”.
+
+            Ganó fama por tocar una Fender Telecaster roja, la cual impactó en un amplificador en un programa de
+            televisión en vivo cuando la banda apareció en “Saturday Night Live”.
+
+            Al inicio de la carrera de la banda, Cook se uniría Matt Helders y Andy Nicholson en coros para las
+            canciones como "Fake Tales of San Francisco ", pero actualmente evita cantar.
+
+            Cook también se considera que es el "fanático de la música indie" del grupo. Con un gusto musical conformado
+            por The Smiths, The Strokes, Oasis, y Queens of the Stone Age. Cook supuestamente volvió a la banda en lo
+            que es hoy en día. Cook también ha sido descrito como: "El guapo confiado y hablador de la banda"</p>
         <br>
 
         <h2>Mick O'Malley</h2>
         <img src="../assets/nickomalley.jpg" alt="Mike O'Malley">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laboriosam sapiente animi fugiat. Iusto accusantium, corrupti cumque voluptatem aspernatur illo dolorem iure, libero distinctio, velit temporibus ducimus dignissimos? Earum sapiente laborum vero quo asperiores maiores sit cupiditate fugit. Aperiam quam ipsam ratione sit, sapiente dicta voluptatem tenetur repellat! Totam dolor doloribus perspiciatis, ut esse in error explicabo officia dicta, eius sint necessitatibus temporibus quis nobis, deserunt repellat sit asperiores voluptatem ab. Sunt quod doloremque consequuntur maxime tempora, quis eveniet nam dolor eius consectetur nesciunt porro laboriosam possimus! Possimus, enim provident inventore, nihil a nostrum totam fugiat qui earum alias aperiam!</p>
+        <p>Nicholas O'Malley (Sheffield, Inglaterra; 5 de julio de 1985) es un músico británico, conocido por ser el
+            bajista de la banda británica Arctic Monkeys.
+            O'Malley empezó a tocar el bajo a la edad de 16 años, luego de que sus ambiciones de tocar la batería y la
+            guitarra fueran negadas por su padre. Antes de Arctic Monkeys, O'Malley tocaba el bajo en una banda de rock
+            de garaje llamada The Dodgems.
+            Después de que Andy Nicholson anunciara que no haría el tour por Norteamérica con la banda, O'Malley, un
+            amigo de la banda y bajista de The Dodgems, fue incluido como un reemplazo temporal mientras O'Malley
+            trabajaba en Asda. O'Malley dijo que aprendió todo el álbum debut de la banda en dos días de juego
+            intensivo en los que "prácticamente ni siquiera salió de la casa". Sus primeras grabaciones con la banda
+            fueron en el sencillo «Leave Before the Lights Come On», que no pertenece a ningún álbum, en el que tocaba
+            el bajo.
+            Aunque O'Malley sólo esperaba continuar hasta la completa recuperación de Nicholson, la salida de este fue
+            vista como un anunciamiento de que O'Malley continuaría en gira con la banda al finalizar el verano y
+            grabaría el segundo álbum de la banda. Arctic Monkeys pusieron un comunicado en su página web más tarde,
+            explicando la salida de Nicholson y la incorporación oficial de Nick. Cuando se convirtió en miembro
+            permanente, declaró en una entrevista con Q TV que conocía a la banda antes de unirse a ellos: "Nunca se
+            sintió como una presión tan grande".
+        </p>
 
-    <!-- PIE DE PÁGINA -->
-    <section class="footer">
-        <footer id="footer">
-            <p>Siguenos en nuestras redes:</p>
-            <p>
-                <a href="https://instagram.com">Instagram</a>
-                <a href="https://facebook.com">Facebook</a>
-                <a href="https://twitter.com">Twitter</a>
-                <a href="https://tiktok.com">Tiktok</a>
+        <!-- PIE DE PÁGINA -->
+        <section class="footer">
+            <footer id="footer">
+                <p>Siguenos en nuestras redes:</p>
+                <p>
+                    <a href="https://instagram.com">Instagram</a>
+                    <a href="https://facebook.com">Facebook</a>
+                    <a href="https://twitter.com">Twitter</a>
+                    <a href="https://tiktok.com">Tiktok</a>
                 </p>
-            </footer> 
-    </section>
+            </footer>
+        </section>
 
-</body>
+        <!-- link al script de bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+
+        <script src="https://kit.fontawesome.com/39e41a4486.js" crossorigin="anonymous"></script>
+
+    </body>
 
 </html>

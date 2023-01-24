@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>CONCIERTOS</title>
+
+    <!-- link al cdn de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/style.css">
+    <title>CONCIERTOS</title>
 
 </head>
 
 <body>
-    <header class="header" id="header">   <!-- HEADER MENU DE NAVEGACION -->
-    <nav> <!-- ETIQUETA DE NAVEGACION -->
-            <ul class="lista">
-                <p class="titulo">Arctic<span class=second-color>Monkeys</span>
-                </p>
-                <li>
-                    <a href="../index.html">Inicio</a> <!-- <A> ETIQUETA DE LINK / ESTE ES UN LINK RELATIVO ES DECIR INTERNO A NUESTRA WEB -->
-                </li>
-                <li>
-                    <a href="./historia.html">Historia</a> 
-                </li>
-                <li>
-                    <a href="./integrantes.html">Integrantes</a>
-                </li>
-                <li>
-                    <a href="./discografia.html">Discografía</a>
-                </li>
-                <li>
-                    <a href="./conciertos.html">Conciertos</a>
-                </li>
-            </ul>
+    <header class="header" id="header"> <!-- HEADER MENU DE NAVEGACION -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+
+                <a class="navbar-brand href=""></a>
+                <!--icono-->
+                <img class=" logo" src="../assets/logo.svg" alt="logo">
+
+                    <!--boton del menu-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--elementos del menu colapsable-->
+
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./integrantes.html">Integrantes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./historia.html">Historia</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./discografia.html">Discografía</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./conciertos.html">Conciertos</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+            </div>
+
         </nav>
     </header>
 
     <body class="conciertos">
         <h1>CONCIERTOS</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio laudantium reprehenderit perspiciatis magni dolor nostrum unde quos? Aspernatur repellat, ratione harum soluta vero hic. Vitae recusandae maxime dicta repudiandae nostrum!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio laudantium reprehenderit perspiciatis
+            magni dolor nostrum unde quos? Aspernatur repellat, ratione harum soluta vero hic. Vitae recusandae maxime
+            dicta repudiandae nostrum!</p>
         <br>
         <h2>NOMBRE GIRA 1</h2>
         <ul>
@@ -62,17 +88,23 @@
             <p>TICKETS</p>
         </ul>
 
-    <!-- PIE DE PÁGINA -->
-    <section class="footer">
-        <footer id="footer">
-            <p>Siguenos en nuestras redes:</p>
-            <p>
-                <a href="https://instagram.com">Instagram</a>
-                <a href="https://facebook.com">Facebook</a>
-                <a href="https://twitter.com">Twitter</a>
-                <a href="https://tiktok.com">Tiktok</a>
+        <!-- PIE DE PÁGINA -->
+        <section class="footer">
+            <footer id="footer">
+                <p>Siguenos en nuestras redes:</p>
+                <p>
+                    <a href="https://instagram.com">Instagram</a>
+                    <a href="https://facebook.com">Facebook</a>
+                    <a href="https://twitter.com">Twitter</a>
+                    <a href="https://tiktok.com">Tiktok</a>
                 </p>
-            </footer> 
-    </section>
-</body>
+            </footer>
+        </section>
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/39e41a4486.js" crossorigin="anonymous"></script>
+
 </html>

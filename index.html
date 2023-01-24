@@ -22,12 +22,12 @@
 
     <header class="header" id="header"> <!-- HEADER MENU DE NAVEGACION -->
 
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid">
 
                 <a class="navbar-brand href=""></a>
                 <!--icono-->
-                <img class="logo" src="./assets/logo.svg" alt="logo">
+                <img class=" logo" src="./assets/logo.svg" alt="logo">
 
                     <!--boton del menu-->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
@@ -40,22 +40,22 @@
                     <div class="collapse navbar-collapse" id="menu">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="">Inicio</a>
+                                <a class="nav-link" href="./index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Integrantes</a>
+                                <a class="nav-link" href="./pages/integrantes.html">Integrantes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Historia</a>
+                                <a class="nav-link" href="./pages/historia.html">Historia</a>
                             </li>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Discografía</a>
+                                <a class="nav-link" href="./pages/discografia.html">Discografía</a>
                             </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Conciertos</a>
-                        </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/discografia.html">Conciertos</a>
+                            </li>
                         </ul>
 
                     </div>
@@ -66,61 +66,69 @@
 
     </header>
 
-
-    <div class="flex-container">
-        <img src="./assets/arcticmonkeysmain.jpg" alt=""> <!-- IMAGEN DE CABECERA -->
-        <p class="sobre">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas et laudantium quibusdam. Molestias quaerat
-            voluptates modi beatae est consequatur veritatis saepe. Saepe ea doloribus magnam necessitatibus excepturi
-            quasi ducimus nisi! Maiores eius consequatur obcaecati. Rem nemo inventore laborum delectus quia laudantium,
-            soluta nulla? At quos harum soluta animi nisi veniam eos inventore voluptatum quisquam possimus quam
-            explicabo reiciendis placeat ipsum recusandae et, distinctio libero exercitationem necessitatibus officiis,
-            rem nihil quia. Hic sed neque architecto quasi, est laudantium unde ex similique, error officia, doloribus
-            velit odit quo asperiores debitis. Non molestias architecto quod error adipisci ipsa quasi mollitia odio
-            excepturi culpa.<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea tenetur aliquid
-            voluptate vero animi fugiat optio ipsam qui laudantium debitis! Excepturi nam rerum eos tenetur vitae id
-            fugiat reiciendis commodi labore nostrum quas, consequuntur nesciunt placeat cum iste optio soluta,
-            doloremque distinctio atque quaerat. Dolore voluptas soluta cum itaque labore nobis blanditiis maiores
-            excepturi earum, nesciunt dolores possimus ad nostrum deleniti nisi assumenda atque suscipit illo fuga
-            facere! Natus accusantium dolores illo, illum aliquid maiores eveniet exercitationem quaerat ab dolore?
-        </p>
-    </div>
-
-
-
     <!-- CONTENIDO PRINCIPAL -->
-    <main class="main" id="main"> <!-- main = etiqueta que encierra contenido prinicipal -->
 
-        <!-- titulos populares-->
-        <h1>TITULOS POPULARES</h1>
-        <section class="grilla">
-            <div class="grillahijo g1">
-                <img class="albumindex" src="./assets/albumam.jpg" alt="The Car">
-                <p>hijo</p>
-                <p>Lorem fffffefefefefef ipsum dolor sit amet consectetur adipisicing elit. Quae ipsum dicta veritatis
-                    exercitationem enim quasi ad ducimus, earum perferendis, eveniet alias saepe sed nam voluptatibus,
-                    possimus iste quia? Iure, expedita!</p>
+    <section class="principal">
+        <div class="texto-principal">
+            <p>Arctic Monkeys es una banda británica de rock, formada en Sheffield, Reino Unido. El grupo está
+                compuesto por el guitarrista principal y vocalista Alex Turner, el guitarrista Jamie Cook, el baterista
+                Matt Helders y el bajista Nick O'Malley. El bajista original de la banda, Andy Nicholson, dejó el
+                proyecto en 2006 poco después del lanzamiento del álbum debut.
+
+                Arctic Monkeys ha sido considerada como una de las primeras bandas en hacerse conocidas al público
+                gracias a la difusión de sus canciones por Internet, por lo cual se los catalogó como «la banda que pudo
+                haber cambiado el mercado de la música». Esto le valió para que su álbum de estudio debut, Whatever
+                People Say I Am, That's What I'm Not (2006), se convierta en el disco debut británico más vendido en la
+                historia, con más de 300 mil copias vendidas en su primera semana en el mercado. Ganó el premio al
+                Mejor Álbum Británico en los Brit Awards 2007. El segundo álbum de la banda, Favourite Worst Nightmare
+                (2007), contó casi con el mismo éxito, ganando también el premio al Mejor Álbum Británico en los Brit
+                Awards 2008. Luego pasarían a sacar Humbug (2009), un proyecto más experimental, y Suck It and See
+                (2011).
+            </p>
+            <img src="./assets/arcticmonkeysmain.jpg" class="img-fluid" alt="Arctic Monkeys">
+        </div>
+    </section>
+
+    <!-- seccion con bts -->
+        <div class="container p-5">
+            <h1>TITULOS POPULARES</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 350px;">
+                        <img src="./assets/albumam.jpg" class="card-img-top" alt="AM">
+                        <div class="card-body">
+                            <h5 class="card-title">AM</h5>
+                            <p class="card-text"></p>
+                            <button type="button" class="btn btn-warning">Escuchar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 350px;">
+                        <img src="./assets/albumtranquilitybasehotelcasino.jpg" class="card-img-top"
+                            alt="Tranquility Base Hotel + Casino">
+                        <div class="card-body">
+                            <h5 class="card-title">Tranquility Base Hotel + Casino</h5>
+                            <p class="card-text"></p>
+                            <button type="button" class="btn btn-warning">Escuchar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 350px;">
+                        <img src="./assets/albumwpstwin.jpg" class="card-img-top"
+                            alt="Whatever People Say I Am, That's What I'm Not">
+                        <div class="card-body">
+                            <h5 class="card-title">Whatever People Say I Am, That's What I'm Not</h5>
+                            <p class="card-text"></p>
+                            <button type="button" class="btn btn-warning">Escuhar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="grillahijo g2">
-                <img class="albumindex" src="./assets/albumfavouriteworstnightmare.jpg"
-                    alt="Tranquility Base Hotel + Casino">
-                <p>hijo</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsum dicta veritatis exercitationem
-                    enim quasi ad ducimus, earum perferendis, eveniet alias saepe sed nam voluptatibus, possimus iste
-                    quia? Iure, expedita!</p>
-            </div>
-
-            <div class="grillahijo g3">
-                <img class="albumindex" src="./assets/albumwpstwin.jpg"
-                    alt="Whatever People Say I Am, That's What I'm Not">
-                <p>hijo</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsum dicta veritatis exercitationem
-                    enim quasi ad ducimus, earum perferendis, eveniet alias saepe sed nam voluptatibus, possimus iste
-                    quia? Iure, expedita!</p>
-            </div>
-
-    </main>
+        </div>
 
     <section class="formulario"> <!-- titulo seccion novedades -->
         <form action="" class="form"> <!-- ABRIMOS NUESTRO FORM -->

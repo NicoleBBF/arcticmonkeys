@@ -9,9 +9,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: anton;
+    text-align: center;
 }
 
-ul, ol, li {
+body {
+    background-color: #1B120F;
+}
+
+.texto-principal {
+    padding: 20px;
+}
+
+ul,
+ol,
+li {
     list-style: none;
 }
 
@@ -28,7 +39,7 @@ a {
 
 .historia {
     background-color: #1B120F;
-    color:#E6DEDD
+    color: #E6DEDD
 }
 
 .discografia {
@@ -39,26 +50,6 @@ a {
 .conciertos {
     background-color: #1B120F;
     color: #E6DEDD;
-}
-
-/* CONTENEDOR SOBRE */
-
-.flex-container img {
-    height: 500px;
-    margin: 10px;
-}
-
-.flex-container {
-    background-color: #1B120F;
-    color: #E6DEDD;
-    display: flex;
-    justify-content: flex-end; /* alinea el contenido al final del eje principal (derecha, en este caso) */
-    padding: 20px;
-}
-
-.sobre {
-    padding: 20px;
-    text-align: center;
 }
 
 /* PROPIEDADES titulo ARCTIC MONKEYS */
@@ -73,6 +64,8 @@ a {
     color: #F89D13;
 }
 
+/* BOTON */
+
 .btn {
     color: #1B120F;
     background-color: #F89D13;
@@ -86,13 +79,32 @@ a {
     font-size: 24px;
 }
 
-img.albumindex {
-    width: 400px;
-    height: 400px
+/* PRIMER CONTENIDO CON IMAGEN */
+
+.principal {
+    background: #1B120F;
+    color: #E6DEDD;
+    text-align: center;
+}
+
+/* DIMENSIONES ALBUMS INDEX */
+
+.row {
+    display: flex;
+    justify-content: center;
 }
 
 
-/* NAV */
+/* NAV - HEADER */
+
+header {
+    background-color: #1B120F;
+    font-family: anton;
+    font-size: 32px;
+    /* position: sticky; */
+    top: 0;
+    width: 100%;
+}
 
 .logo {
     height: 100px;
@@ -100,24 +112,51 @@ img.albumindex {
 }
 
 
-
 div.container-fluid {
-    background-color: #1B120F;
+    background-color: #191919;
+    padding: 0px;
 }
 
-.nav-link {
-    color:#E6DEDD
+.navbar {
+    padding: 0px;
 }
 
-.nav-link:focus, .nav-link:hover {
-    color: #c92a1f;
+
+/* EFECTOS ENLACES */
+
+a {
+    background-image: linear-gradient(to right,
+            #F89D13,
+            #F89D13 50%,
+            #E6DEDD 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    gap: 10px;
+a:before {
+    content: '';
+    background: #F89D13;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background-position: 0;
+}
+
+a:hover::before {
+    width: 100%;
 }
 
 /* MAIN CONTENIDO PRINCIPAL */
@@ -139,17 +178,11 @@ h2 {
     color: #c92a1f;
 }
 
-/* HEADER */
+/* Titulos populares bootstrap */
 
-header {
-    background-color: #191919;
-    font-family: anton;
-    height: 70px;
-    font-size: 32px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+.card {
+    background-color: #8F1D14;
+    color: #E6DEDD;
 }
 
 /* EMPEZAR A TRABAJAR RESPONSIVE AL MENOS 2 SITIOS SIEMPRE UTILLIZAR MEDIDAS RELATIVAnmo
@@ -235,11 +268,15 @@ nav ul {
     background-color: #1B120F;
     min-height: 100vh;
     max-height: 100%;
-    padding: 70px 10px; /* espacio entre grilla */
-    display: grid; /* para que se comporte como grilla */
-    grid-template-columns: 1fr; /* para usar columnas en el mismo tamaño */
+    padding: 70px 10px;
+    /* espacio entre grilla */
+    display: grid;
+    /* para que se comporte como grilla */
+    grid-template-columns: 1fr;
+    /* para usar columnas en el mismo tamaño */
     grid-template-rows: auto;
-    gap: 10px; /* espacio entre grilla */
+    gap: 10px;
+    /* espacio entre grilla */
     justify-content: center;
     justify-items: center;
 }
@@ -260,21 +297,21 @@ nav ul {
 
 
 
-@media only screen and (min-width:480px){
+@media only screen and (min-width:480px) {
 
-    .grilla{
+    .grilla {
         grid-template-columns: 1fr 1fr;
     }
 
 
 }
 
-@media only screen and (min-width: 768px){
-    .grilla{
-    grid-template-columns: repeat(3, 1fr);
+@media only screen and (min-width: 768px) {
+    .grilla {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    
+
 }
 
 
@@ -295,13 +332,6 @@ i {
     color: #F89D13;
 }
 
-@media only screen and (min-width:900px) and (max-width:899px)
-
-
-
-
-@media only screen and (min-width:600px) and (max-width:1200px)
-
-.cajas {
+@media only screen and (min-width:900px) and (max-width:899px) @media only screen and (min-width:600px) and (max-width:1200px) .cajas {
     flex-direction: column;
-    }
+}
