@@ -367,7 +367,3 @@ i {
 @font-face {
   font-family: 'anton';
   src: url(../assets/fonts/Anton-Regular.ttf); }
-
-.navbar-toggler {
-  display: none;
-  /* ocultar el botón hamburguesa */ }
