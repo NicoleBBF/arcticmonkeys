@@ -1,158 +1,26 @@
 @import "./vars";
+
+@import "./layout/general";
 @import "./base/btn";
+
 @import "./index";
-@import "./layout/integrantes";
-@import "./layout/historia";
-@import "./layout/conciertos";
-@import "./layout/discografia";
+@import "./integrantes";
+@import "./historia";
+@import "./conciertos";
+@import "./discografia";
+@import "./galeria";
+@import "./store";
+
+@import "./layout/footer";
 
 @font-face {
     font-family: 'anton';
     src: url(../assets/fonts/Anton-Regular.ttf)
 }
 
-/* * = selector universal para reseteo de estilos por default del html*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: anton;
-    text-align: center;
-}
+$navbar-expand-breakpoint: 1020px;
 
-body {
-    background-color: $dark-color;
-}
-
-ul,
-ol,
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* PAGINAS */
-
-.integrantes {
-    background-color: $dark-color;
-    color: $white-color;
-}
-
-.historia {
-    background-color: $dark-color;
-    color: $white-color;
-}
-
-.discografia {
-    background-color: $dark-color;
-    color: $white-color;
-}
-
-.conciertos {
-    background-color: $dark-color;
-    color: $white-color;
-}
-
-/* NAV - HEADER */
-
-header {
-    background-color: $dark-color;
-    font-family: anton;
-    font-size: 32px;
-    /* position: sticky; */
-    top: 0;
-    width: 100%;
-}
-
-.logo {
-    height: 100px;
-    margin: 0px 50px;
-}
-
-
-div.container-fluid {
-    background-color: $black-color;
-    padding: 0px;
-}
-
-.navbar {
-    padding: 0px;
-}
-
-
-/* EFECTOS ENLACES */
-
-a {
-    background-image: linear-gradient(to right,
-            $orange-color,
-            $orange-color 50%,
-            $white-color 50%);
-    background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
-    padding: 5px 0;
-    position: relative;
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
-}
-
-a:before {
-    content: '';
-    background: $orange-color;
-    display: block;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 3px;
-    transition: all 0.3s ease-in-out;
-}
-
-a:hover {
-    background-position: 0;
-}
-
-a:hover::before {
-    width: 100%;
-}
-
-
-/* PROPIEDADES PARA TODOS LOS H */
-h1 {
-    color: $orange-color;
-    font-size: 34px;
-    font-family: anton;
-}
-
-h2 {
-    color: $red-color;
-}
-
-/* DISCOGRAFÍA */
-
-.discografia-pagina {
-    margin: 10px;
-}
-
-/* FOOTER */
-
-footer {
-    background: $black-color;
-    color: $white-color;
-    size: 10px;
-    font-size: 30px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 30px;
-}
-
-/* COLOR ICONOS FOOTER */
-
-i {
-    color: $orange-color;
+.navbar-toggler {
+    display: none;
+    /* ocultar el botón hamburguesa */
 }

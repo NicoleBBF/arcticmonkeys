@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
-
-
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -17,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nicobianca/arcticmonkeys/issues"
   },
-  "homepage": "https://github.com/nicobianca/arcticmonkeys#readme"
+  "homepage": "https://github.com/nicobianca/arcticmonkeys#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
 }

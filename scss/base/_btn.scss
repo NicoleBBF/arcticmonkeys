@@ -14,16 +14,7 @@
     font-size: 24px;
 }
 
-.btn2 {
+.btn:hover {
     color: $dark-color;
-    background-color: $red-color;
-    margin: 10px;
-    padding: 10px;
-    width: 150px;
-    border-radius: 40px;
-    font-family: anton;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
+    background-color: $orange2-color;
 }

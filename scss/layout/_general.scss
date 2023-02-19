@@ -1,0 +1,156 @@
+/* * = selector universal para reseteo de estilos por default del html*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: anton;
+    text-align: center;
+}
+
+body {
+    background-color: $dark-color;
+    padding-top: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+/* PAGINAS */
+
+.integrantes {
+    background-color: $dark-color;
+    color: $white-color;
+}
+
+.historia {
+    background-color: $dark-color;
+    color: $white-color;
+}
+
+.discografia {
+    background-color: $dark-color;
+    color: $white-color;
+}
+
+.conciertos {
+    background-color: $dark-color;
+    color: $white-color;
+}
+
+/* NAV - HEADER */
+
+header {
+    background-color: $dark-color;
+    font-family: anton;
+    font-size: 32px;
+    /* position: sticky; */
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    height: 100px;
+    margin: 0px 50px;
+}
+
+
+div.container-fluid {
+    background-color: $black-color;
+    padding: 0px;
+}
+
+.navbar {
+    padding-top: 0px;
+}
+
+/* FORMULARIO */
+
+input {
+    background-color: $white-color;
+    color: $orange2-color;
+    border: 5px solid $grey-color;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+/* EFECTOS ENLACES */
+
+.nav-link {
+    background-image: linear-gradient(to right,
+            $orange-color,
+            $orange-color 50%,
+            $white-color 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:before {
+    content: '';
+    background: $orange-color;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    background-position: 0;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+
+/* PROPIEDADES PARA TODOS LOS H */
+h1 {
+    color: $orange-color;
+    font-size: 34px;
+    font-family: anton;
+}
+
+h2 {
+    color: $red-color;
+}
+
+/* DISCOGRAFÍA */
+
+.discografia-pagina {
+    margin: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background: $black-color;
+    color: $white-color;
+    size: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+/* COLOR ICONOS FOOTER */
+
+i {
+    color: $orange-color;
+}

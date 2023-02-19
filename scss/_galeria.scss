@@ -1,0 +1,36 @@
+.galeria .row {
+    margin: 10px;
+    padding: 10px;
+}
+
+.responsive-image {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.responsive-image:hover {
+    transform: scale(1.1);
+}
+
+.encabezado-galeria {
+    background:
+        linear-gradient(75deg, #570606c2, #362d0ad4), url(../assets/arcticmonkeys6.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    max-width: 100%;
+}
+
+.header-text-galeria {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $white-color;
+}

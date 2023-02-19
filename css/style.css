@@ -1,4 +1,126 @@
 @charset "UTF-8";
+/* * = selector universal para reseteo de estilos por default del html*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: anton;
+  text-align: center; }
+
+body {
+  background-color: #1B120F;
+  padding-top: 80px; }
+
+a {
+  text-decoration: none; }
+
+ul,
+ol,
+li {
+  list-style: none; }
+
+/* PAGINAS */
+.integrantes {
+  background-color: #1B120F;
+  color: #E6DEDD; }
+
+.historia {
+  background-color: #1B120F;
+  color: #E6DEDD; }
+
+.discografia {
+  background-color: #1B120F;
+  color: #E6DEDD; }
+
+.conciertos {
+  background-color: #1B120F;
+  color: #E6DEDD; }
+
+/* NAV - HEADER */
+header {
+  background-color: #1B120F;
+  font-family: anton;
+  font-size: 32px;
+  /* position: sticky; */
+  top: 0;
+  width: 100%; }
+
+.logo {
+  height: 100px;
+  margin: 0px 50px; }
+
+div.container-fluid {
+  background-color: #191919;
+  padding: 0px; }
+
+.navbar {
+  padding-top: 0px; }
+
+/* FORMULARIO */
+input {
+  background-color: #E6DEDD;
+  color: #E16428;
+  border: 5px solid #CDC9C3;
+  border-radius: 20px;
+  padding: 5px; }
+
+/* EFECTOS ENLACES */
+.nav-link {
+  background-image: linear-gradient(to right, #F89D13, #F89D13 50%, #E6DEDD 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out; }
+
+.nav-link:before {
+  content: '';
+  background: #F89D13;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out; }
+
+.nav-link:hover {
+  background-position: 0; }
+
+.nav-link:hover::before {
+  width: 100%; }
+
+/* PROPIEDADES PARA TODOS LOS H */
+h1 {
+  color: #F89D13;
+  font-size: 34px;
+  font-family: anton; }
+
+h2 {
+  color: #c92a1f; }
+
+/* DISCOGRAFÍA */
+.discografia-pagina {
+  margin: 10px; }
+
+/* FOOTER */
+footer {
+  background: #191919;
+  color: #E6DEDD;
+  size: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px; }
+
+/* COLOR ICONOS FOOTER */
+i {
+  color: #F89D13; }
+
 /* BOTON */
 .btn {
   color: #1B120F;
@@ -13,18 +135,9 @@
   justify-content: center;
   font-size: 24px; }
 
-.btn2 {
+.btn:hover {
   color: #1B120F;
-  background-color: #c92a1f;
-  margin: 10px;
-  padding: 10px;
-  width: 150px;
-  border-radius: 40px;
-  font-family: anton;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px; }
+  background-color: #E16428; }
 
 /* PRIMER CONTENIDO CON IMAGEN */
 .principal p {
@@ -38,6 +151,23 @@
 /* TITULOS POPULARES */
 .tarjetas-populares {
   margin: 10px; }
+
+.encabezado {
+  background: linear-gradient(75deg, #570606c2, #362d0ad4), url(../assets/arcticmonkeysmain.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  max-width: 100%; }
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #E6DEDD; }
 
 /* FORMULARIO */
 .formulario {
@@ -97,128 +227,147 @@
 .integrantes {
   margin: 15px; }
 
+.encabezado-integrantes {
+  background: linear-gradient(75deg, #570606c2, #362d0ad4), url(../assets/arcticmonkeys3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  max-width: 100%; }
+
+.header-text-integrantes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #E6DEDD; }
+
 .historia {
   margin: 15px; }
 
-.cardh {
-  background-color: #F89D13; }
+.encabezado-historia {
+  background: linear-gradient(75deg, #570606c2, #362d0ad4), url(../assets/arcticmonkeys2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  max-width: 100%; }
 
-.concierto {
-  margin: 10px; }
+.header-text-historia {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #E6DEDD; }
+
+.encabezado-concierto {
+  background: linear-gradient(75deg, #570606c2, #362d0ad4), url(../assets/arcticmonkeys5.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  max-width: 100%; }
+
+.header-text-concierto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #E6DEDD; }
+
+.responsive-image {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease; }
+
+.responsive-image:hover {
+  transform: scale(1.1); }
+
+.encabezado-discografia {
+  background: linear-gradient(75deg, #570606c2, #362d0ad4), url(../assets/arcticmonkeys4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  max-width: 100%; }
+
+.header-text-discografia {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #E6DEDD; }
+
+.galeria .row {
+  margin: 10px;
+  padding: 10px; }
+
+.responsive-image {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease; }
+
+.responsive-image:hover {
+  transform: scale(1.1); }
+
+.encabezado-galeria {
+  background: linear-gradient(75deg, #570606c2, #362d0ad4), url(../assets/arcticmonkeys6.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  max-width: 100%; }
+
+.header-text-galeria {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #E6DEDD; }
+
+.encabezado-store {
+  background: linear-gradient(75deg, #570606c2, #362d0ad4), url(../assets/arcticmonkeys7.png);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  max-width: 100%; }
+
+.header-text-store {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #E6DEDD; }
+
+.footer a {
+  color: #CDC9C3;
+  text-decoration: none;
+  transition: all 0.3s ease; }
+
+.footer a:hover {
+  color: #CDC9C3; }
 
 @font-face {
   font-family: 'anton';
   src: url(../assets/fonts/Anton-Regular.ttf); }
 
-/* * = selector universal para reseteo de estilos por default del html*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: anton;
-  text-align: center; }
-
-body {
-  background-color: #1B120F; }
-
-ul,
-ol,
-li {
-  list-style: none; }
-
-a {
-  text-decoration: none; }
-
-/* PAGINAS */
-.integrantes {
-  background-color: #1B120F;
-  color: #E6DEDD; }
-
-.historia {
-  background-color: #1B120F;
-  color: #E6DEDD; }
-
-.discografia {
-  background-color: #1B120F;
-  color: #E6DEDD; }
-
-.conciertos {
-  background-color: #1B120F;
-  color: #E6DEDD; }
-
-/* NAV - HEADER */
-header {
-  background-color: #1B120F;
-  font-family: anton;
-  font-size: 32px;
-  /* position: sticky; */
-  top: 0;
-  width: 100%; }
-
-.logo {
-  height: 100px;
-  margin: 0px 50px; }
-
-div.container-fluid {
-  background-color: #191919;
-  padding: 0px; }
-
-.navbar {
-  padding: 0px; }
-
-/* EFECTOS ENLACES */
-a {
-  background-image: linear-gradient(to right, #F89D13, #F89D13 50%, #E6DEDD 50%);
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out; }
-
-a:before {
-  content: '';
-  background: #F89D13;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  transition: all 0.3s ease-in-out; }
-
-a:hover {
-  background-position: 0; }
-
-a:hover::before {
-  width: 100%; }
-
-/* PROPIEDADES PARA TODOS LOS H */
-h1 {
-  color: #F89D13;
-  font-size: 34px;
-  font-family: anton; }
-
-h2 {
-  color: #c92a1f; }
-
-/* DISCOGRAFÍA */
-.discografia-pagina {
-  margin: 10px; }
-
-/* FOOTER */
-footer {
-  background: #191919;
-  color: #E6DEDD;
-  size: 10px;
-  font-size: 30px;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 30px; }
-
-/* COLOR ICONOS FOOTER */
-i {
-  color: #F89D13; }
+.navbar-toggler {
+  display: none;
+  /* ocultar el botón hamburguesa */ }

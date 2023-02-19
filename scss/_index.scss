@@ -19,6 +19,26 @@
     margin: 10px;
 }
 
+.encabezado {
+    background:
+        linear-gradient(75deg, #570606c2, #362d0ad4), url(../assets/arcticmonkeysmain.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    max-width: 100%;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $white-color;
+}
+
 /* FORMULARIO */
 
 .formulario {
