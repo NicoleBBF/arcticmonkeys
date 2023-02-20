@@ -21,7 +21,7 @@
 
 .encabezado {
     background:
-        linear-gradient(75deg, #570606c2, #362d0ad4), url(../assets/arcticmonkeysmain.jpg);
+        linear-gradient(75deg, $red-gradient, $yellow-gradient), url(../assets/arcticmonkeysmain.jpg);
     background-size: cover;
     background-position: center;
     height: 500px;
